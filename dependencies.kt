@@ -1,18 +1,18 @@
 object VersionApp {
     //Kotlin
-    const val kotlinVersion                     = "1.5.10"
+    const val kotlinVersion                     = "1.5.31"
     //SDK
-    const val compileSdkVersion                 = 30
+    const val compileSdkVersion                 = 31
     const val buildToolsVersion                 = "30.0.3"
     const val minSdkVersion                     = 23
-    const val targetSdkVersion                  = 30
+    const val targetSdkVersion                  = 31
 
     const val testInstrumentationRunner         = "androidx.test.runner.AndroidJUnitRunner"
 
     const val coreKtxVersion                    = "1.6.0"
     const val appCompatVersion                  = "1.3.1"
     const val materialVersion                   = "1.4.0"
-    const val constraintLayoutVersion           = "2.1.0"
+    const val constraintLayoutVersion           = "2.1.1"
 
     const val junitVersion                      = "4.13.2"
     const val mockitoCoreVersion                = "3.9.0"
