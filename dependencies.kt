@@ -24,7 +24,7 @@ object VersionApp {
     const val robolectricVersion                = "4.3"
 
     const val daggerVersion                     = "2.35.1"
-    const val daggerCompilerVersionError        = "2.35.1"
+    const val hiltVersion                       = "2.39.1"
 
     const val koinVersion                       = "2.2.3"
 
@@ -38,6 +38,18 @@ object VersionApp {
     const val rxAndroidVersion                  = "2.1.1"
     const val adapterRxJavaVersion              = "2.5.0"
 
+    const val lifecycleViewModelVersion         = "2.3.1"
+    const val lifecycleLiveDataVersion          = "2.3.1"
+    const val lifecycleRuntimeVersion           = "2.3.1"
+
+    const val coroutinesVersion                 = "1.5.0"
+
+    const val roomVersion                       = "2.3.0"
+
+    const val chuckerVersion                    = "3.5.0"
+
+    const val glideVersion                      = "4.12.0"
+
     const val gmsMapsVersion                    = "17.0.1"
     const val hmsMapsVersion                    = "6.0.0.301"
 }
@@ -45,12 +57,16 @@ object VersionApp {
 object MainApplicationDependencies {
     const val kotlinStdlib                      = "org.jetbrains.kotlin:kotlin-stdlib:${VersionApp.kotlinVersion}"
     const val coreKtx                           = "androidx.core:core-ktx:${VersionApp.coreKtxVersion}"
+
     const val appCompat                         = "androidx.appcompat:appcompat:${VersionApp.appCompatVersion}"
     const val material                          = "com.google.android.material:material:${VersionApp.materialVersion}"
     const val constraintLayout                  = "androidx.constraintlayout:constraintlayout:${VersionApp.constraintLayoutVersion}"
 
     const val dagger                            = "com.google.dagger:dagger:${VersionApp.daggerVersion}"
-    const val daggerCompiler                    = "com.google.dagger:dagger-compiler:${VersionApp.daggerCompilerVersionError}"
+    const val daggerCompiler                    = "com.google.dagger:dagger-compiler:${VersionApp.daggerVersion}"
+
+    const val hilt                              = "com.google.dagger:hilt-android:${VersionApp.hiltVersion}"
+    const val hiltCompiler                      = "com.google.dagger:hilt-android-compiler:${VersionApp.hiltVersion}"
 
     const val koinCore                          = "io.insert-koin:koin-core:${VersionApp.koinVersion}"
     const val koinAndroidxScope                 = "io.insert-koin:koin-androidx-scope:${VersionApp.koinVersion}"
@@ -65,6 +81,23 @@ object MainApplicationDependencies {
     const val rxJava                            = "io.reactivex.rxjava2:rxjava:${VersionApp.rxJavaVersion}"
     const val rxAndroid                         = "io.reactivex.rxjava2:rxandroid:${VersionApp.rxAndroidVersion}"
     const val adapterRxJava                     = "com.squareup.retrofit2:adapter-rxjava2:${VersionApp.adapterRxJavaVersion}"
+
+    const val lifecycleViewModel                = "androidx.lifecycle:lifecycle-viewmodel-ktx:${VersionApp.lifecycleViewModelVersion}"
+    const val lifecycleLiveData                 = "androidx.lifecycle:lifecycle-livedata-ktx:${VersionApp.lifecycleLiveDataVersion}"
+    const val lifecycleRuntime                  = "androidx.lifecycle:lifecycle-runtime-ktx:${VersionApp.lifecycleRuntimeVersion}"
+
+    const val coroutinesCore                    = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${VersionApp.coroutinesVersion}"
+    const val coroutinesAndroid                 = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${VersionApp.coroutinesVersion}"
+
+    const val roomRuntime                       = "androidx.room:room-runtime:${VersionApp.roomVersion}"
+    const val roomCompiler                      = "androidx.room:room-compiler:${VersionApp.roomVersion}"
+    const val roomKtx                           = "androidx.room:room-ktx:${VersionApp.roomVersion}"
+
+    const val chucker                           = "com.github.chuckerteam.chucker:library:${VersionApp.chuckerVersion}"
+    const val chuckerNoOp                       = "com.github.chuckerteam.chucker:library-no-op:${VersionApp.chuckerVersion}"
+
+    const val glide                             = "com.github.bumptech.glide:glide:${VersionApp.glideVersion}"
+    const val glideCompiler                     = "com.github.bumptech.glide:compiler:${VersionApp.glideVersion}"
 
     const val gmsMaps                           = "com.google.android.gms:play-services-maps:${VersionApp.gmsMapsVersion}"
     const val hmsMaps                           = "com.huawei.hms:maps:${VersionApp.hmsMapsVersion}"
