@@ -2,10 +2,10 @@ object VersionApp {
     //Kotlin
     const val kotlinVersion                     = "1.5.31"
     //SDK
-    const val compileSdkVersion                 = 31
+    const val compileSdkVersion                 = 30
     const val buildToolsVersion                 = "30.0.3"
     const val minSdkVersion                     = 23
-    const val targetSdkVersion                  = 31
+    const val targetSdkVersion                  = 30
 
     const val testInstrumentationRunner         = "androidx.test.runner.AndroidJUnitRunner"
 
