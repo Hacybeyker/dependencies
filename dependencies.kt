@@ -21,7 +21,8 @@ object VersionApp {
     const val mockitoInlineVersion              = "3.1.0"
     const val mockitoKotlinVersion              = "2.2.0"
     const val kotlinCoroutinesTestVersion       = "1.3.2"
-    const val robolectricVersion                = "4.3"
+    const val robolectricVersion                = "4.5.1"
+    const val robolectricShadowVersion          = "4.1"
 
     const val daggerVersion                     = "2.35.1"
     const val daggerCompilerVersionError        = "2.35.1"
@@ -82,4 +83,5 @@ object TestDependencies{
 
     const val kotlinCoroutinesTest              = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${VersionApp.kotlinCoroutinesTestVersion}"
     const val robolectric                       = "org.robolectric:robolectric:${VersionApp.robolectricVersion}"
+    const val robolectricShadow                 = "org.robolectric:shadows-supportv4:${VersionApp.robolectricShadowVersion}"
 }
