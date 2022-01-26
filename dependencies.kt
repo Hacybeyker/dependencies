@@ -2,17 +2,18 @@ object VersionApp {
     //Kotlin
     const val kotlinVersion                     = "1.5.31"
     //SDK
-    const val compileSdkVersion                 = 30
+    const val compileSdkVersion                 = 31
     const val buildToolsVersion                 = "30.0.3"
     const val minSdkVersion                     = 23
-    const val targetSdkVersion                  = 30
+    const val targetSdkVersion                  = 31
 
     const val testInstrumentationRunner         = "androidx.test.runner.AndroidJUnitRunner"
 
-    const val coreKtxVersion                    = "1.6.0"
-    const val appCompatVersion                  = "1.3.1"
-    const val materialVersion                   = "1.4.0"
-    const val constraintLayoutVersion           = "2.1.1"
+    const val coreKtxVersion                    = "1.7.0"
+    const val appCompatVersion                  = "1.4.1"
+    const val materialVersion                   = "1.5.0"
+    const val constraintLayoutVersion           = "2.1.3"
+    const val viewPager2Version                 = "1.0.0"
 
     const val junitVersion                      = "4.13.2"
     const val mockitoCoreVersion                = "3.9.0"
@@ -25,7 +26,8 @@ object VersionApp {
     const val robolectricShadowVersion          = "4.1"
 
     const val daggerVersion                     = "2.35.1"
-    const val hiltVersion                       = "2.39.1"
+    const val hiltVersion                       = "2.40.5"
+    const val fragmentKtxVersion                = "1.4.0"
 
     const val koinVersion                       = "2.2.3"
 
@@ -62,12 +64,14 @@ object MainApplicationDependencies {
     const val appCompat                         = "androidx.appcompat:appcompat:${VersionApp.appCompatVersion}"
     const val material                          = "com.google.android.material:material:${VersionApp.materialVersion}"
     const val constraintLayout                  = "androidx.constraintlayout:constraintlayout:${VersionApp.constraintLayoutVersion}"
+    const val viewPager2                        = "androidx.viewpager2:viewpager2:${VersionApp.viewPager2Version}"
 
     const val dagger                            = "com.google.dagger:dagger:${VersionApp.daggerVersion}"
     const val daggerCompiler                    = "com.google.dagger:dagger-compiler:${VersionApp.daggerVersion}"
 
     const val hilt                              = "com.google.dagger:hilt-android:${VersionApp.hiltVersion}"
-    const val hiltCompiler                      = "com.google.dagger:hilt-android-compiler:${VersionApp.hiltVersion}"
+    const val hiltCompiler                      = "com.google.dagger:hilt-compiler:${VersionApp.hiltVersion}"
+    const val fragmentKtx                       = "androidx.fragment:fragment-ktx:${VersionApp.fragmentKtxVersion}"
 
     const val koinCore                          = "io.insert-koin:koin-core:${VersionApp.koinVersion}"
     const val koinAndroidxScope                 = "io.insert-koin:koin-androidx-scope:${VersionApp.koinVersion}"
@@ -117,4 +121,7 @@ object TestDependencies{
     const val kotlinCoroutinesTest              = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${VersionApp.kotlinCoroutinesTestVersion}"
     const val robolectric                       = "org.robolectric:robolectric:${VersionApp.robolectricVersion}"
     const val robolectricShadow                 = "org.robolectric:shadows-supportv4:${VersionApp.robolectricShadowVersion}"
+
+    const val hiltAndroidTesting                = "com.google.dagger:hilt-android-testing:${VersionApp.hiltVersion}"
+    const val hiltCompiler                      = "com.google.dagger:hilt-compiler:${VersionApp.hiltVersion}"
 }
