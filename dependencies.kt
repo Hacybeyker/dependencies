@@ -1,7 +1,7 @@
-object VersionApp {
-    //Kotlin
+object AppVersion {
+
     const val kotlinVersion                     = "1.5.31"
-    //SDK
+
     const val compileSdkVersion                 = 31
     const val buildToolsVersion                 = "30.0.3"
     const val minSdkVersion                     = 23
@@ -14,16 +14,6 @@ object VersionApp {
     const val materialVersion                   = "1.5.0"
     const val constraintLayoutVersion           = "2.1.3"
     const val viewPager2Version                 = "1.0.0"
-
-    const val junitVersion                      = "4.13.2"
-    const val mockitoCoreVersion                = "3.9.0"
-    const val extJUnitVersion                   = "1.1.3"
-    const val espressoCoreVersion               = "3.4.0"
-    const val mockitoInlineVersion              = "3.1.0"
-    const val mockitoKotlinVersion              = "2.2.0"
-    const val kotlinCoroutinesTestVersion       = "1.3.2"
-    const val robolectricVersion                = "4.5.1"
-    const val robolectricShadowVersion          = "4.1"
 
     const val daggerVersion                     = "2.35.1"
     const val hiltVersion                       = "2.40.5"
@@ -45,9 +35,10 @@ object VersionApp {
     const val lifecycleLiveDataVersion          = "2.3.1"
     const val lifecycleRuntimeVersion           = "2.3.1"
 
-    const val coroutinesVersion                 = "1.5.0"
+    const val coroutinesVersion                 = "1.6.0"
 
     const val roomVersion                       = "2.3.0"
+    const val preferencesVersion                = "1.2.0"
 
     const val chuckerVersion                    = "3.5.0"
 
@@ -57,71 +48,104 @@ object VersionApp {
     const val hmsMapsVersion                    = "6.0.0.301"
 }
 
-object MainApplicationDependencies {
-    const val kotlinStdlib                      = "org.jetbrains.kotlin:kotlin-stdlib:${VersionApp.kotlinVersion}"
-    const val coreKtx                           = "androidx.core:core-ktx:${VersionApp.coreKtxVersion}"
+object AppDependencies {
+    const val kotlinStdlib                      = "org.jetbrains.kotlin:kotlin-stdlib:${AppVersion.kotlinVersion}"
+    const val coreKtx                           = "androidx.core:core-ktx:${AppVersion.coreKtxVersion}"
 
-    const val appCompat                         = "androidx.appcompat:appcompat:${VersionApp.appCompatVersion}"
-    const val material                          = "com.google.android.material:material:${VersionApp.materialVersion}"
-    const val constraintLayout                  = "androidx.constraintlayout:constraintlayout:${VersionApp.constraintLayoutVersion}"
-    const val viewPager2                        = "androidx.viewpager2:viewpager2:${VersionApp.viewPager2Version}"
+    const val appCompat                         = "androidx.appcompat:appcompat:${AppVersion.appCompatVersion}"
+    const val material                          = "com.google.android.material:material:${AppVersion.materialVersion}"
+    const val constraintLayout                  = "androidx.constraintlayout:constraintlayout:${AppVersion.constraintLayoutVersion}"
+    const val viewPager2                        = "androidx.viewpager2:viewpager2:${AppVersion.viewPager2Version}"
 
-    const val dagger                            = "com.google.dagger:dagger:${VersionApp.daggerVersion}"
-    const val daggerCompiler                    = "com.google.dagger:dagger-compiler:${VersionApp.daggerVersion}"
+    const val dagger                            = "com.google.dagger:dagger:${AppVersion.daggerVersion}"
+    const val daggerCompiler                    = "com.google.dagger:dagger-compiler:${AppVersion.daggerVersion}"
 
-    const val hilt                              = "com.google.dagger:hilt-android:${VersionApp.hiltVersion}"
-    const val hiltCompiler                      = "com.google.dagger:hilt-compiler:${VersionApp.hiltVersion}"
-    const val fragmentKtx                       = "androidx.fragment:fragment-ktx:${VersionApp.fragmentKtxVersion}"
+    const val hilt                              = "com.google.dagger:hilt-android:${AppVersion.hiltVersion}"
+    const val hiltCompiler                      = "com.google.dagger:hilt-compiler:${AppVersion.hiltVersion}"
+    const val fragmentKtx                       = "androidx.fragment:fragment-ktx:${AppVersion.fragmentKtxVersion}"
 
-    const val koinCore                          = "io.insert-koin:koin-core:${VersionApp.koinVersion}"
-    const val koinAndroidxScope                 = "io.insert-koin:koin-androidx-scope:${VersionApp.koinVersion}"
-    const val koinAndroidxViewModel             = "io.insert-koin:koin-androidx-viewmodel:${VersionApp.koinVersion}"
+    const val koinCore                          = "io.insert-koin:koin-core:${AppVersion.koinVersion}"
+    const val koinAndroidxScope                 = "io.insert-koin:koin-androidx-scope:${AppVersion.koinVersion}"
+    const val koinAndroidxViewModel             = "io.insert-koin:koin-androidx-viewmodel:${AppVersion.koinVersion}"
 
-    const val retrofit                          = "com.squareup.retrofit2:retrofit:${VersionApp.retrofitVersion}"
-    const val converterGson                     = "com.squareup.retrofit2:converter-gson:${VersionApp.converterGsonVersion}"
-    const val gson                              = "com.google.code.gson:gson:${VersionApp.gsonVersion}"
-    const val loggingInterceptor                = "com.squareup.okhttp3:logging-interceptor:${VersionApp.loggingInterceptorVersion}"
-    const val okHttpJsonMock                    = "com.github.mirrajabi:okhttp-json-mock:${VersionApp.okHttpJsonMockVersion}"
+    const val retrofit                          = "com.squareup.retrofit2:retrofit:${AppVersion.retrofitVersion}"
+    const val converterGson                     = "com.squareup.retrofit2:converter-gson:${AppVersion.converterGsonVersion}"
+    const val gson                              = "com.google.code.gson:gson:${AppVersion.gsonVersion}"
+    const val loggingInterceptor                = "com.squareup.okhttp3:logging-interceptor:${AppVersion.loggingInterceptorVersion}"
+    const val okHttpJsonMock                    = "com.github.mirrajabi:okhttp-json-mock:${AppVersion.okHttpJsonMockVersion}"
 
-    const val rxJava                            = "io.reactivex.rxjava2:rxjava:${VersionApp.rxJavaVersion}"
-    const val rxAndroid                         = "io.reactivex.rxjava2:rxandroid:${VersionApp.rxAndroidVersion}"
-    const val adapterRxJava                     = "com.squareup.retrofit2:adapter-rxjava2:${VersionApp.adapterRxJavaVersion}"
+    const val rxJava                            = "io.reactivex.rxjava2:rxjava:${AppVersion.rxJavaVersion}"
+    const val rxAndroid                         = "io.reactivex.rxjava2:rxandroid:${AppVersion.rxAndroidVersion}"
+    const val adapterRxJava                     = "com.squareup.retrofit2:adapter-rxjava2:${AppVersion.adapterRxJavaVersion}"
 
-    const val lifecycleViewModel                = "androidx.lifecycle:lifecycle-viewmodel-ktx:${VersionApp.lifecycleViewModelVersion}"
-    const val lifecycleLiveData                 = "androidx.lifecycle:lifecycle-livedata-ktx:${VersionApp.lifecycleLiveDataVersion}"
-    const val lifecycleRuntime                  = "androidx.lifecycle:lifecycle-runtime-ktx:${VersionApp.lifecycleRuntimeVersion}"
+    const val lifecycleViewModel                = "androidx.lifecycle:lifecycle-viewmodel-ktx:${AppVersion.lifecycleViewModelVersion}"
+    const val lifecycleLiveData                 = "androidx.lifecycle:lifecycle-livedata-ktx:${AppVersion.lifecycleLiveDataVersion}"
+    const val lifecycleRuntime                  = "androidx.lifecycle:lifecycle-runtime-ktx:${AppVersion.lifecycleRuntimeVersion}"
 
-    const val coroutinesCore                    = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${VersionApp.coroutinesVersion}"
-    const val coroutinesAndroid                 = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${VersionApp.coroutinesVersion}"
+    const val coroutinesCore                    = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${AppVersion.coroutinesVersion}"
+    const val coroutinesAndroid                 = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${AppVersion.coroutinesVersion}"
 
-    const val roomRuntime                       = "androidx.room:room-runtime:${VersionApp.roomVersion}"
-    const val roomCompiler                      = "androidx.room:room-compiler:${VersionApp.roomVersion}"
-    const val roomKtx                           = "androidx.room:room-ktx:${VersionApp.roomVersion}"
+    const val roomRuntime                       = "androidx.room:room-runtime:${AppVersion.roomVersion}"
+    const val roomCompiler                      = "androidx.room:room-compiler:${AppVersion.roomVersion}"
+    const val roomKtx                           = "androidx.room:room-ktx:${AppVersion.roomVersion}"
 
-    const val chucker                           = "com.github.chuckerteam.chucker:library:${VersionApp.chuckerVersion}"
-    const val chuckerNoOp                       = "com.github.chuckerteam.chucker:library-no-op:${VersionApp.chuckerVersion}"
+    const val preferences                       = "androidx.preference:preference-ktx:${AppVersion.preferencesVersion}"
 
-    const val glide                             = "com.github.bumptech.glide:glide:${VersionApp.glideVersion}"
-    const val glideCompiler                     = "com.github.bumptech.glide:compiler:${VersionApp.glideVersion}"
+    const val glide                             = "com.github.bumptech.glide:glide:${AppVersion.glideVersion}"
+    const val glideCompiler                     = "com.github.bumptech.glide:compiler:${AppVersion.glideVersion}"
 
-    const val gmsMaps                           = "com.google.android.gms:play-services-maps:${VersionApp.gmsMapsVersion}"
-    const val hmsMaps                           = "com.huawei.hms:maps:${VersionApp.hmsMapsVersion}"
+    const val gmsMaps                           = "com.google.android.gms:play-services-maps:${AppVersion.gmsMapsVersion}"
+    const val hmsMaps                           = "com.huawei.hms:maps:${AppVersion.hmsMapsVersion}"
+
+    const val chucker                           = "com.github.chuckerteam.chucker:library:${AppVersion.chuckerVersion}"
+    const val chuckerNoOp                       = "com.github.chuckerteam.chucker:library-no-op:${AppVersion.chuckerVersion}"
+}
+
+object TestVersion{
+    const val junitVersion                      = "4.13.2"
+    const val mockitoVersion                    = "4.3.1"
+    const val extJUnitVersion                   = "1.1.3"
+    const val espressoCoreVersion               = "3.4.0"
+    const val mockitoNhaarmanVersion            = "2.2.0"
+    const val kotlinCoroutinesTestVersion       = "1.3.2"
+    const val robolectricVersion                = "4.7.3"
+    const val robolectricShadowVersion          = "4.1"
+    const val hiltVersion                       = "2.40.5"
+    const val hamcrestVersion                   = "2.2"
+    const val coreKtxVersion                    = "1.4.0"
+    const val junitKtxVersion                   = "1.1.3"
+    const val fragmentTestVersion               = "1.4.1"
+    const val archCoreTestVersion               = "2.1.0"
+    const val espressoContribVersion            = "3.4.0"
+    const val mockWebServerVersion              = "4.9.3"
 }
 
 object TestDependencies{
-    const val junit                             = "junit:junit:${VersionApp.junitVersion}"
-    const val extJUnit                          = "androidx.test.ext:junit:${VersionApp.extJUnitVersion}"
+    const val junit                             = "junit:junit:${TestVersion.junitVersion}"
+    const val extJUnit                          = "androidx.test.ext:junit:${TestVersion.extJUnitVersion}"
+    const val espressoCore                      = "androidx.test.espresso:espresso-core:${TestVersion.espressoCoreVersion}"
+    const val espressoContrib                   = "androidx.test.espresso:espresso-contrib:${TestVersion.espressoContribVersion}"
+    const val mockitoCore                       = "org.mockito:mockito-core:${TestVersion.mockitoVersion}"
+    const val mockitoInline                     = "org.mockito:mockito-inline:${TestVersion.mockitoVersion}"
+    const val mockitoKotlin                     = "org.mockito.kotlin:mockito-kotlin:${TestVersion.mockitoVersion}"
+    const val mockitoKotlinNhaarman             = "com.nhaarman.mockitokotlin2:mockito-kotlin:${TestVersion.mockitoNhaarmanVersion}"
+    const val kotlinCoroutines                  = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${TestVersion.kotlinCoroutinesTestVersion}"
+    const val robolectric                       = "org.robolectric:robolectric:${TestVersion.robolectricVersion}"
+    const val robolectricShadow                 = "org.robolectric:shadows-supportv4:${TestVersion.robolectricShadowVersion}"
+    const val hiltAndroid                       = "com.google.dagger:hilt-android-testing:${TestVersion.hiltVersion}"
+    const val hiltCompiler                      = "com.google.dagger:hilt-compiler:${TestVersion.hiltVersion}"
+    const val hamcrest                          = "org.hamcrest:hamcrest:${TestVersion.hamcrestVersion}"
+    const val coreKtx                           = "androidx.test:core-ktx:${TestVersion.coreKtxVersion}"
+    const val junitKtx                          = "androidx.test.ext:junit-ktx:${TestVersion.junitKtxVersion}"
+    const val fragment                          = "androidx.fragment:fragment-testing:${TestVersion.fragmentTestVersion}"
+    const val archCore                          = "androidx.arch.core:core-testing:${TestVersion.archCoreTestVersion}"
+    const val mockWebServer                     = "com.squareup.okhttp3:mockwebserver:${TestVersion.mockWebServerVersion}"
+}
 
-    const val espressoCore                      = "androidx.test.espresso:espresso-core:${VersionApp.espressoCoreVersion}"
+object ValidateVersion{
+    const val detektVersion                     = "1.18.0"
+}
 
-    const val mockitoCore                       = "org.mockito:mockito-core:${VersionApp.mockitoCoreVersion}"
-    const val mockitoInline                     = "org.mockito:mockito-inline:${VersionApp.mockitoInlineVersion}"
-    const val mockitoKotlin                     = "com.nhaarman.mockitokotlin2:mockito-kotlin:${VersionApp.mockitoKotlinVersion}"
-
-    const val kotlinCoroutinesTest              = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${VersionApp.kotlinCoroutinesTestVersion}"
-    const val robolectric                       = "org.robolectric:robolectric:${VersionApp.robolectricVersion}"
-    const val robolectricShadow                 = "org.robolectric:shadows-supportv4:${VersionApp.robolectricShadowVersion}"
-
-    const val hiltAndroidTesting                = "com.google.dagger:hilt-android-testing:${VersionApp.hiltVersion}"
-    const val hiltCompiler                      = "com.google.dagger:hilt-compiler:${VersionApp.hiltVersion}"
+object ValidationDependencies{
+    const val detekt                            = "io.gitlab.arturbosch.detekt:detekt-formatting:${ValidateVersion.detektVersion}"
 }
