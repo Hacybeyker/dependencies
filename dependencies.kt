@@ -46,6 +46,8 @@ object AppVersion {
 
     const val gmsMapsVersion                    = "17.0.1"
     const val hmsMapsVersion                    = "6.0.0.301"
+
+    const val lottieVersion                     = "5.0.3"
 }
 
 object AppDependencies {
@@ -96,6 +98,8 @@ object AppDependencies {
 
     const val gmsMaps                           = "com.google.android.gms:play-services-maps:${AppVersion.gmsMapsVersion}"
     const val hmsMaps                           = "com.huawei.hms:maps:${AppVersion.hmsMapsVersion}"
+
+    const val lottie                            = "com.airbnb.android:lottie:${AppVersion.lottieVersion}"
 
     const val chucker                           = "com.github.chuckerteam.chucker:library:${AppVersion.chuckerVersion}"
     const val chuckerNoOp                       = "com.github.chuckerteam.chucker:library-no-op:${AppVersion.chuckerVersion}"
