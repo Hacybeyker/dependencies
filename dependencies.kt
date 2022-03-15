@@ -128,6 +128,7 @@ object TestDependencies{
     const val junit                             = "junit:junit:${TestVersion.junitVersion}"
     const val extJUnit                          = "androidx.test.ext:junit:${TestVersion.extJUnitVersion}"
     const val espressoCore                      = "androidx.test.espresso:espresso-core:${TestVersion.espressoCoreVersion}"
+    const val espressoIntents                   = "androidx.test.espresso:espresso-intents:${TestVersion.espressoCoreVersion}"
     const val espressoContrib                   = "androidx.test.espresso:espresso-contrib:${TestVersion.espressoContribVersion}"
     const val mockitoCore                       = "org.mockito:mockito-core:${TestVersion.mockitoVersion}"
     const val mockitoInline                     = "org.mockito:mockito-inline:${TestVersion.mockitoVersion}"
