@@ -31,13 +31,10 @@ object AppVersion {
     const val rxAndroidVersion                  = "2.1.1"
     const val adapterRxJavaVersion              = "2.5.0"
 
-    const val lifecycleViewModelVersion         = "2.3.1"
-    const val lifecycleLiveDataVersion          = "2.3.1"
-    const val lifecycleRuntimeVersion           = "2.3.1"
-
+    const val lifecycleVersion                  = "2.4.1"
     const val coroutinesVersion                 = "1.6.0"
 
-    const val roomVersion                       = "2.3.0"
+    const val roomVersion                       = "2.4.2"
     const val preferencesVersion                = "1.2.0"
 
     const val chuckerVersion                    = "3.5.0"
@@ -80,9 +77,9 @@ object AppDependencies {
     const val rxAndroid                         = "io.reactivex.rxjava2:rxandroid:${AppVersion.rxAndroidVersion}"
     const val adapterRxJava                     = "com.squareup.retrofit2:adapter-rxjava2:${AppVersion.adapterRxJavaVersion}"
 
-    const val lifecycleViewModel                = "androidx.lifecycle:lifecycle-viewmodel-ktx:${AppVersion.lifecycleViewModelVersion}"
-    const val lifecycleLiveData                 = "androidx.lifecycle:lifecycle-livedata-ktx:${AppVersion.lifecycleLiveDataVersion}"
-    const val lifecycleRuntime                  = "androidx.lifecycle:lifecycle-runtime-ktx:${AppVersion.lifecycleRuntimeVersion}"
+    const val lifecycleViewModel                = "androidx.lifecycle:lifecycle-viewmodel-ktx:${AppVersion.lifecycleVersion}"
+    const val lifecycleLiveData                 = "androidx.lifecycle:lifecycle-livedata-ktx:${AppVersion.lifecycleVersion}"
+    const val lifecycleRuntime                  = "androidx.lifecycle:lifecycle-runtime-ktx:${AppVersion.lifecycleVersion}"
 
     const val coroutinesCore                    = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${AppVersion.coroutinesVersion}"
     const val coroutinesAndroid                 = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${AppVersion.coroutinesVersion}"
@@ -108,6 +105,7 @@ object AppDependencies {
 object TestVersion{
     const val junitVersion                      = "4.13.2"
     const val mockitoVersion                    = "4.3.1"
+    const val mockitoKotlinVersion              = "4.0.0"
     const val extJUnitVersion                   = "1.1.3"
     const val espressoCoreVersion               = "3.4.0"
     const val mockitoNhaarmanVersion            = "2.2.0"
@@ -127,18 +125,23 @@ object TestVersion{
 object TestDependencies{
     const val junit                             = "junit:junit:${TestVersion.junitVersion}"
     const val extJUnit                          = "androidx.test.ext:junit:${TestVersion.extJUnitVersion}"
+
     const val espressoCore                      = "androidx.test.espresso:espresso-core:${TestVersion.espressoCoreVersion}"
     const val espressoIntents                   = "androidx.test.espresso:espresso-intents:${TestVersion.espressoCoreVersion}"
     const val espressoContrib                   = "androidx.test.espresso:espresso-contrib:${TestVersion.espressoContribVersion}"
+
     const val mockitoCore                       = "org.mockito:mockito-core:${TestVersion.mockitoVersion}"
     const val mockitoInline                     = "org.mockito:mockito-inline:${TestVersion.mockitoVersion}"
-    const val mockitoKotlin                     = "org.mockito.kotlin:mockito-kotlin:${TestVersion.mockitoVersion}"
+    const val mockitoKotlin                     = "org.mockito.kotlin:mockito-kotlin:${TestVersion.mockitoKotlinVersion}"
     const val mockitoKotlinNhaarman             = "com.nhaarman.mockitokotlin2:mockito-kotlin:${TestVersion.mockitoNhaarmanVersion}"
+
     const val kotlinCoroutines                  = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${TestVersion.kotlinCoroutinesTestVersion}"
-    const val robolectric                       = "org.robolectric:robolectric:${TestVersion.robolectricVersion}"
-    const val robolectricShadow                 = "org.robolectric:shadows-supportv4:${TestVersion.robolectricShadowVersion}"
     const val hiltAndroid                       = "com.google.dagger:hilt-android-testing:${TestVersion.hiltVersion}"
     const val hiltCompiler                      = "com.google.dagger:hilt-compiler:${TestVersion.hiltVersion}"
+
+    const val robolectric                       = "org.robolectric:robolectric:${TestVersion.robolectricVersion}"
+    const val robolectricShadow                 = "org.robolectric:shadows-supportv4:${TestVersion.robolectricShadowVersion}"
+
     const val hamcrest                          = "org.hamcrest:hamcrest:${TestVersion.hamcrestVersion}"
     const val coreKtx                           = "androidx.test:core-ktx:${TestVersion.coreKtxVersion}"
     const val junitKtx                          = "androidx.test.ext:junit-ktx:${TestVersion.junitKtxVersion}"
