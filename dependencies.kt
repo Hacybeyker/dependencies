@@ -1,6 +1,6 @@
 object VersionApp {
     //Kotlin
-    const val kotlinVersion                     = "1.5.10"
+    const val kotlinVersion                     = "1.5.21"
     //SDK
     const val compileSdkVersion                 = 30
     const val buildToolsVersion                 = "30.0.3"
@@ -12,7 +12,13 @@ object VersionApp {
     const val coreKtxVersion                    = "1.6.0"
     const val appCompatVersion                  = "1.3.1"
     const val materialVersion                   = "1.4.0"
-    const val constraintLayoutVersion           = "2.1.0"
+    const val constraintLayoutVersion           = "2.1.1"
+    const val viewPagerVersion                  = "1.0.0"
+    const val cardViewVersion                   = "1.0.0"
+    const val paletteVersion                    = "1.0.0"
+    const val preferenceVersion                 = "1.1.1"
+    const val legacySupportV4Version            = "1.0.0"
+    const val navigationVersion                 = "2.3.5"
 
     const val junitVersion                      = "4.13.2"
     const val mockitoCoreVersion                = "3.9.0"
@@ -40,14 +46,31 @@ object VersionApp {
 
     const val gmsMapsVersion                    = "17.0.1"
     const val hmsMapsVersion                    = "6.0.0.301"
+
+    const val glideVersion                      = "4.12.0"
+    const val coilVersion                       = "1.2.2"
+    const val roundedImageViewVersion           = "2.3.0"
+    const val kenburnsViewVersion               = "1.0.7"
+    const val touchImageViewVersion             = "3.1.0"
+    const val zxingAndroidVersion               = "4.2.0"
+    const val zxingCoreVersion                  = "3.4.0"
+    const val slidableActivityVersion           = "2.1.0"
 }
 
 object MainApplicationDependencies {
     const val kotlinStdlib                      = "org.jetbrains.kotlin:kotlin-stdlib:${VersionApp.kotlinVersion}"
     const val coreKtx                           = "androidx.core:core-ktx:${VersionApp.coreKtxVersion}"
+
     const val appCompat                         = "androidx.appcompat:appcompat:${VersionApp.appCompatVersion}"
     const val material                          = "com.google.android.material:material:${VersionApp.materialVersion}"
     const val constraintLayout                  = "androidx.constraintlayout:constraintlayout:${VersionApp.constraintLayoutVersion}"
+    const val viewPager                         = "androidx.viewpager2:viewpager2:${VersionApp.viewPagerVersion}"
+    const val cardView                          = "androidx.cardview:cardview:${VersionApp.cardViewVersion}"
+    const val palette                           = "androidx.palette:palette-ktx:${VersionApp.paletteVersion}"
+    const val preference                        = "androidx.preference:preference:${VersionApp.preferenceVersion}"
+    const val legacySupportV4                   = "androidx.legacy:legacy-support-v4:${VersionApp.legacySupportV4Version}"
+    const val navigationFragment                = "androidx.navigation:navigation-fragment-ktx:${VersionApp.navigationVersion}"
+    const val navigationUI                      = "androidx.navigation:navigation-ui-ktx:${VersionApp.navigationVersion}"
 
     const val dagger                            = "com.google.dagger:dagger:${VersionApp.daggerVersion}"
     const val daggerCompiler                    = "com.google.dagger:dagger-compiler:${VersionApp.daggerCompilerVersionError}"
@@ -68,6 +91,16 @@ object MainApplicationDependencies {
 
     const val gmsMaps                           = "com.google.android.gms:play-services-maps:${VersionApp.gmsMapsVersion}"
     const val hmsMaps                           = "com.huawei.hms:maps:${VersionApp.hmsMapsVersion}"
+
+    const val glide                             = "com.github.bumptech.glide:glide:${VersionApp.glideVersion}"
+    const val glideCompiler                     = "com.github.bumptech.glide:compiler:${VersionApp.glideVersion}"
+    const val coil                              = "io.coil-kt:coil:${VersionApp.coilVersion}"
+    const val roundedImageView                  = "com.makeramen:roundedimageview:${VersionApp.roundedImageViewVersion}"
+    const val kenburnsView                      = "com.flaviofaria:kenburnsview:${VersionApp.kenburnsViewVersion}"
+    const val touchImageView                    = "com.github.MikeOrtiz:TouchImageView:${VersionApp.touchImageViewVersion}"
+    const val zxingAndroid                      = "com.journeyapps:zxing-android-embedded:${VersionApp.zxingAndroidVersion}"
+    const val zxingCore                         = "com.google.zxing:core:${VersionApp.zxingCoreVersion}"
+    const val slidableActivity                  = "com.r0adkll:slidableactivity:${VersionApp.slidableActivityVersion}"
 }
 
 object TestDependencies{
