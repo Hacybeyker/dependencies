@@ -45,6 +45,8 @@ object AppVersion {
     const val hmsMapsVersion                    = "6.0.0.301"
 
     const val lottieVersion                     = "5.0.3"
+
+    const val shimmerFacebookVersion            = "0.5.0"
 }
 
 object AppDependencies {
@@ -100,6 +102,8 @@ object AppDependencies {
 
     const val chucker                           = "com.github.chuckerteam.chucker:library:${AppVersion.chuckerVersion}"
     const val chuckerNoOp                       = "com.github.chuckerteam.chucker:library-no-op:${AppVersion.chuckerVersion}"
+
+    const val shimmerFacebook                   = "com.facebook.shimmer:shimmer:${AppVersion.shimmerFacebookVersion}"
 }
 
 object TestVersion{
