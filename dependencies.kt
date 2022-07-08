@@ -124,6 +124,7 @@ object TestVersion{
     const val archCoreTestVersion               = "2.1.0"
     const val espressoContribVersion            = "3.4.0"
     const val mockWebServerVersion              = "4.9.3"
+    const val mockKVersion                      = "1.12.2"
 }
 
 object TestDependencies{
@@ -152,6 +153,7 @@ object TestDependencies{
     const val fragment                          = "androidx.fragment:fragment-testing:${TestVersion.fragmentTestVersion}"
     const val archCore                          = "androidx.arch.core:core-testing:${TestVersion.archCoreTestVersion}"
     const val mockWebServer                     = "com.squareup.okhttp3:mockwebserver:${TestVersion.mockWebServerVersion}"
+    const val mockK                             = "io.mockk:mockk:${TestVersion.mockKVersion}"
 }
 
 object ValidateVersion{
