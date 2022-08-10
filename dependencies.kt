@@ -103,6 +103,16 @@ object AppDependencies {
     const val shimmerFacebook                   = "com.facebook.shimmer:shimmer:${AppVersion.shimmerFacebookVersion}"
 }
 
+object ClassPath{
+    const val gradle                            = "com.android.tools.build:gradle:7.2.2"
+    const val kotlinGradlePlugin                = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21"
+    const val hiltAndroidPlugin                 = "com.google.dagger:hilt-android-gradle-plugin:2.43.1"
+    const val jacoco                            = "org.jacoco:org.jacoco.core:0.8.7"
+    const val sonarqubeGradlePlugin             = "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3"
+    const val secretGradlePlugin                = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.1"
+    const val googleServices                    = "com.google.gms:google-services:4.3.13"
+}
+
 object TestVersion{
     const val junitVersion                      = "4.13.2"
     const val mockitoVersion                    = "4.3.1"
