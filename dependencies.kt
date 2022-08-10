@@ -1,22 +1,19 @@
 object AppVersion {
-
-    const val kotlinVersion                     = "1.5.31"
-
+    const val kotlinVersion                     = "1.7.10"
     const val compileSdkVersion                 = 31
-    const val buildToolsVersion                 = "30.0.3"
+    const val buildToolsVersion                 = "31.0.0"
     const val minSdkVersion                     = 23
     const val targetSdkVersion                  = 31
-
     const val testInstrumentationRunner         = "androidx.test.runner.AndroidJUnitRunner"
 
     const val coreKtxVersion                    = "1.7.0"
-    const val appCompatVersion                  = "1.4.1"
-    const val materialVersion                   = "1.5.0"
-    const val constraintLayoutVersion           = "2.1.3"
+    const val appCompatVersion                  = "1.4.2"
+    const val materialVersion                   = "1.7.0-alpha02"
+    const val constraintLayoutVersion           = "2.1.4"
     const val viewPager2Version                 = "1.0.0"
 
     const val daggerVersion                     = "2.35.1"
-    const val hiltVersion                       = "2.40.5"
+    const val hiltVersion                       = "2.43.1"
     const val fragmentKtxVersion                = "1.4.0"
 
     const val koinVersion                       = "2.2.3"
