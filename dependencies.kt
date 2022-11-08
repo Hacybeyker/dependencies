@@ -51,7 +51,7 @@ object VersionApp {
 
     const val glideVersion                      = "4.12.0"
 
-    const val gmsMapsVersion                    = "17.0.1"
+    const val gmsMapsVersion                    = "18.1.0"
     const val hmsMapsVersion                    = "6.0.0.301"
 }
 
