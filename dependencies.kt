@@ -3,7 +3,6 @@ object AppVersion {
     const val kotlinVersion                     = "1.9.0"
 
     const val compileSdkVersion                 = 34
-    const val buildToolsVersion                 = "30.0.3"
     const val minSdkVersion                     = 24
     const val targetSdkVersion                  = 34
 
