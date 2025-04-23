@@ -1,7 +1,7 @@
 object AppVersion {
-    const val compileSdkVersion = 34
+    const val compileSdkVersion = 35
     const val minSdkVersion = 24
-    const val targetSdkVersion = 34
+    const val targetSdkVersion = 35
     const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
     const val coreKtxVersion = "1.13.1"
@@ -28,7 +28,7 @@ object AppVersion {
 
     const val glideVersion = "4.16.0"
 
-    const val gmsMapsVersion = "18.1.0"
+    const val gmsMapsVersion = "18.2.0"
     const val hmsMapsVersion = "6.11.0.304"
 
     const val lottieVersion = "6.4.1"
@@ -116,7 +116,7 @@ object TestDependencies {
 }
 
 object ValidateVersion {
-    const val detektVersion = "1.23.6"
+    const val detektVersion = "1.23.8"
 }
 
 object ValidationDependencies {
